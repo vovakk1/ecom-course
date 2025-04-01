@@ -1,14 +1,7 @@
-import { motion } from "framer-motion";
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-indigo-500 via-pink-500 to-yellow-400 flex items-center justify-center p-6">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="max-w-2xl w-full bg-white/90 backdrop-blur-xl shadow-2xl rounded-2xl p-10 text-center"
-      >
+      <div className="max-w-2xl w-full bg-white/90 backdrop-blur-xl shadow-2xl rounded-2xl p-10 text-center">
         <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-rose-500 to-orange-400 mb-4">
           LumiEcom
         </h1>
@@ -21,8 +14,10 @@ export default function Home() {
         >
           Начать путь
         </a>
-      </motion.div>
+      </div>
     </main>
   );
 }
+
+
 
